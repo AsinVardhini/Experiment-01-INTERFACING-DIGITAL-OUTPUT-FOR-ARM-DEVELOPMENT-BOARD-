@@ -107,7 +107,8 @@ int main(void)
   while (1)
   
   {
-	  led();
+  
+	        led();
     
   }
   
@@ -127,7 +128,7 @@ void led ()
 	
 }
 
-void SystemClock_Config(void)
+ void SystemClock_Config(void)
 
 {
 
@@ -154,7 +155,7 @@ void SystemClock_Config(void)
   
   {
   
-    Error_Handler();
+          Error_Handler();
     
   }
   
@@ -174,7 +175,7 @@ void SystemClock_Config(void)
   
   {
   
-    Error_Handler();
+         Error_Handler();
     
   }
   
@@ -209,14 +210,14 @@ static void MX_GPIO_Init(void)
 }
 
 
-void Error_Handler(void)
+ void Error_Handler(void)
 
 {
 
   
-  __disable_irq();
+      __disable_irq();
   
-  while (1)
+        while (1)
   
   {
   
@@ -228,7 +229,7 @@ void Error_Handler(void)
 
 
 
-void assert_failed(uint8_t *file, uint32_t line)
+ void assert_failed(uint8_t *file, uint32_t line)
 
 {
 
