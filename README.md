@@ -105,14 +105,18 @@ int main(void)
   MX_GPIO_Init();
   
   while (1)
+  
   {
 	  led();
     
   }
   
 }
+
 void led ()
+
 {
+
 	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
 	
 	HAL_Delay(2000);
@@ -124,6 +128,7 @@ void led ()
 }
 
 void SystemClock_Config(void)
+
 {
 
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
@@ -222,6 +227,7 @@ void Error_Handler(void)
 
 
 void assert_failed(uint8_t *file, uint32_t line)
+
 {
 
   
