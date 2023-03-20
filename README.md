@@ -111,12 +111,16 @@ void led ()
 	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
 	
 	HAL_Delay(2000);
+	
 	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
+	
 	HAL_Delay(2000);
+	
 }
 
 void SystemClock_Config(void)
 {
+
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
@@ -139,7 +143,9 @@ void SystemClock_Config(void)
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   
   {
+  
     Error_Handler();
+    
   }
   
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCL|RCC_CLOCKTYPE_PCLK1;
@@ -153,14 +159,19 @@ void SystemClock_Config(void)
   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
   
   {
+  
     Error_Handler();
+    
   }
+  
 }
+
 
 
 static void MX_GPIO_Init(void)
 
 {
+
   GPIO_InitTypeDef GPIO_InitStruct = {0};
 
   
@@ -180,24 +191,34 @@ static void MX_GPIO_Init(void)
   
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
+
 }
 
 
 void Error_Handler(void)
 {
+
   
   __disable_irq();
+  
   while (1)
   {
+  
+  
   }
   
+
 }
+
 
 
 void assert_failed(uint8_t *file, uint32_t line)
 {
+
   
+
 }
+
 #endif 
 
 
