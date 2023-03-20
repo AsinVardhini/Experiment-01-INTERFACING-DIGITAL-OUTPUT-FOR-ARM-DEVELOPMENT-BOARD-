@@ -85,10 +85,15 @@ RegisterNumber: 212222100007
 
 
 void SystemClock_Config(void);
+
 static void MX_GPIO_Init(void);
+
 static void MX_USART2_UART_Tnit(void);
+
 void led();
+
 int main(void)
+
 {
   
   HAL_Init();
@@ -150,11 +155,15 @@ void SystemClock_Config(void)
   
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCL|RCC_CLOCKTYPE_PCLK1;
   
+  
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSI;
+  
   
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
   
+  
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
+  
 
   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
   
