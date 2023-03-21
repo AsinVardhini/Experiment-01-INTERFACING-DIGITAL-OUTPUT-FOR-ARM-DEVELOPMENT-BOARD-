@@ -242,17 +242,10 @@ static void MX_GPIO_Init(void)
 
 
 ## Output  :
- LED is Off:
  
- ![output2](https://user-images.githubusercontent.com/119417735/226415729-dcbd1fbc-7f40-4818-9bbe-7f5074b71f77.jpg)
 
-LED is On:
+![output](https://user-images.githubusercontent.com/119417735/226558609-86f995bf-6deb-46b4-bac9-202343165b0c.jpg)
 
-![output1](https://user-images.githubusercontent.com/119417735/226427844-d83068e1-047c-45dd-8dac-974a0405d879.jpg)
-
-
- 
- 
 ## Result :
 Interfacing a digital output with ARM microcontroller is executed and the results are verified.
 
